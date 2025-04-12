@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.game-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #34762e;
+  overflow: hidden;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-title {
+  margin-top: 5vh;
+  text-align: center;
+  color: #f6ff44;
+  font-size: clamp(60px, 10vw, 125px);
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+}
+
+.game-subtitle {
+  text-align: center;
+  color: white;
+  font-size: clamp(30px, 5vw, 55px);
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  margin-top: 2vh;
+  position: relative;
+  z-index: 2;
+  font-style: italic;
+}
+
+.game-info {
+  text-align: center;
+  color: white;
+  font-size: clamp(20px, 4vw, 35px);
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  margin-top: 2vh;
+  position: relative;
+  z-index: 2;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  color: #34762e;
+  font-size: clamp(12px, 2vw, 18px);
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  text-shadow: 3px 4px 4px rgba(17, 55, 68, 0.5);
+  z-index: 2;
+}
+
+.background-image {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 1111px;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center top;
+  z-index: 1;
+}
+
+.start-button,
+.hit-button {
+  background-color: #f6ff44;
+  color: #34762e;
+  font-size: clamp(18px, 4vw, 25px);
+  font-family: "Inria Serif ", serif;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2vh;
+  z-index: 2;
+}
+
+.player-element {
+  z-index: 1;
+}
